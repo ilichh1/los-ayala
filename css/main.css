@@ -1,0 +1,48 @@
+@import url(./_declarations.css);
+@import url(./_helpers.css);
+@import url(./_loader.css);
+
+* {
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-image: url(/img/background.jpg);
+  background-size: 220vh;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+body > main {
+  background-color: white;
+  padding: 0.5em;
+}
+nav[role="navigation"] {
+  background-color: var(--app-blue-1) !important;
+  margin-bottom: 8px;
+}
+nav[role="navigation"] #logo-container {
+  font-size: 2em;
+}
+
+body > .page-footer {
+  background-color: var(--app-blue-1) !important;
+}
+
+/* <main> spacing  */
+body > main.container {
+  margin-bottom: 10px;
+}
+
+/* ingreso.html */
+body#ingreso .container .login-container {
+  max-width: 500px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+body#ingreso .container .login-container .password-row {
+  margin-bottom: 0;
+}
+/* Glide.js fix */
+.glide {
+  /* overflow: hidden; */
+}

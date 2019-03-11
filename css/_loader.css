@@ -1,0 +1,61 @@
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+}
+
+#loader > div {
+  max-width: 400px;
+  position: relative;
+  z-index: 1010;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+#loader > div > * {
+  flex: 1;
+  opacity: 1;
+
+  transition: opacity 990ms ease-out,
+             transform 800ms ease-in-out;
+}
+
+#loader::before,
+#loader::after {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  
+  transition: transform 940ms ease-in-out;
+}
+
+#loader::before {
+  left: 0;
+  background-color: #11bded;
+}
+
+#loader::after {
+  right: 0;
+  background: #52b24b;
+}
+
+/* ======== closed state ======== */
+#loader.close::before {
+  transform: translateX(-100%);
+}
+#loader.close::after {
+  transform: translateX(100%);
+}
+#loader.close > div > * {
+  opacity: 0;
+  transform: translateY(-100%);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  </head>
+</head>
+<body id="ingreso">
+  <main class="container">
+    <h4>Inicio de sesión</h4>
+
+    <form id="login-form" class="row login-container">
+        <div class="col s12 z-depth-6 card-panel">
+          <form class="login-form">
+            <div class="row">
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">mail_outline</i>
+                <input class="validate" id="email" type="email">
+                <label for="email" data-error="wrong" data-success="right">Correo electrónico</label>
+              </div>
+            </div>
+            <div class="row password-row">
+              <div class="input-field col s12">
+                <i class="material-icons prefix">lock_outline</i>
+                <input id="password" type="password">
+                <label for="password">Contraseña</label>
+              </div>
+            </div>
+            <div class="row">          
+              <div class="input-field col s12 m12 l12 login-text">
+                <label>
+                  <input type="checkbox" class="filled-in" checked="checked" />
+                  <span>Recordarme</span>
+                </label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <button class="btn waves-effect waves-light col s12">Ingresar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </form>
+  </main>
+
+</body>
+
+<script src="./js/utils.js"></script>
+<script src="./js/template-loader.js"></script>
+
+<!-- Compiled and minified JavaScript Materialize -->
+<script src="./js/materialize.min.js"></script>
+
+<!-- ingreso.js -->
+<script src="./js/ingreso.js"></script>
+</html>
