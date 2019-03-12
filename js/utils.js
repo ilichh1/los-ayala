@@ -8,8 +8,8 @@ APP_UTILS.setLoaderState = function (loaderState) {
   const loaderElement = document.querySelector('#loader');
   if (!!loaderState) {
     // Show loader
-    loaderElement.style.display = 'none';
-    loaderElement.classList.remove('close');
+    loaderElement.style.display = 'initial';
+    setTimeout(function(){ loaderElement.classList.remove('close'); }, 10);
   } else {
     // Hide loader
     loaderElement.classList.add('close');
