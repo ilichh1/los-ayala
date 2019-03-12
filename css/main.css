@@ -42,7 +42,18 @@ body#ingreso .container .login-container {
 body#ingreso .container .login-container .password-row {
   margin-bottom: 0;
 }
-/* Glide.js fix */
-.glide {
-  /* overflow: hidden; */
+
+/* tiny slider custom styles */
+.tns-slider {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+}
+.tns-slider .tns-item {
+  text-align: center;
+  flex: 1;
+}
+.tns-slider .tns-item img {
+  width: 100%;
+  height: auto;
 }
