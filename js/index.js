@@ -4,13 +4,43 @@ var canchasTab = M.Tabs.init(tabsElement, {
   duration: 275
 });
 
-// new Glide('.glide').mount();
-
-/* init carousels */
-console.log(document.querySelectorAll('.canchas .carousel'));
-document.querySelectorAll('.canchas .carousel').forEach(function(element) {
-  M.Carousel.init(element, {
-    fullWidth: true,
-    indicators: true
-  });
+var slider = tns({
+  container: '#canchas-slider1',
+  items: 1,
+  slideBy: 'page',
+  autoplayButtonOutput: false,
+  autoplay: true,
+  controls: false,
+  nav: false,
+  mouseDrag: true
+});
+var slider = tns({
+  container: '#canchas-slider2',
+  items: 1,
+  slideBy: 'page',
+  autoplayButtonOutput: false,
+  autoplay: true,
+  controls: false,
+  nav: false,
+  mouseDrag: true
+});
+var slider = tns({
+  container: '#canchas-slider3',
+  items: 1,
+  slideBy: 'page',
+  autoplayButtonOutput: false,
+  autoplay: true,
+  controls: false,
+  nav: false,
+  mouseDrag: true
+});
+var slider = tns({
+  container: '#canchas-slider4',
+  items: 1,
+  slideBy: 'page',
+  autoplayButtonOutput: false,
+  autoplay: true,
+  controls: false,
+  nav: false,
+  mouseDrag: true
 });
