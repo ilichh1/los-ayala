@@ -16,7 +16,7 @@ body > main {
   padding: 0.5em;
 }
 nav[role="navigation"] {
-  background-color: var(--app-blue-1) !important;
+  background-color: var(--app-green-1) !important;
   margin-bottom: 8px;
 }
 nav[role="navigation"] #logo-container {
@@ -24,7 +24,7 @@ nav[role="navigation"] #logo-container {
 }
 
 body > .page-footer {
-  background-color: var(--app-blue-1) !important;
+  background-color: var(--app-green-1) !important;
 }
 
 /* <main> spacing  */

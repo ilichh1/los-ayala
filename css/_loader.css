@@ -23,7 +23,7 @@
   opacity: 1;
 
   transition: opacity 990ms ease-out,
-             transform 800ms ease-in-out;
+              transform 800ms ease-in-out;
 }
 
 #loader::before,
@@ -45,7 +45,7 @@
 
 #loader::after {
   right: 0;
-  background: #52b24b;
+  background-color: var(--app-green-1);
 }
 
 /* ======== closed state ======== */
